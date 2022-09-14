@@ -1,0 +1,10 @@
+<section class="list-container">
+  <mat-card *ngFor="let task of list">
+    <mat-card-title>{{task.title}}</mat-card-title>
+      <mat-card-subtitle>{{task.description}}</mat-card-subtitle>
+    <mat-card-actions>
+      <a mat-button [routerLink]="['/edit', task.id]">edit</a>
+      <a mat-button (click)="deleteTask(task.id)">delete</a>
+    </mat-card-actions>
+  </mat-card>
+</section>

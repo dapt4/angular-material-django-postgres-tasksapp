@@ -1,0 +1,12 @@
+.new-container{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  .mat-card{
+    width: 90%;
+    text-align: center;
+    @media (min-width: 768px) { 
+      width: 50%;
+    }
+  }
+}
